@@ -1,0 +1,38 @@
+//Header y nav
+
+header{
+    display: flex;
+    background-image: linear-gradient($color-principal, $gradiente);
+    padding-bottom: 20px;
+    .navbar{
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-right: 70px;
+        font-size: 13px;
+        .container-fluid{   
+            img{
+                width: 300px;
+                margin-right: 50px;
+            }
+            .navbar-toggler{
+                background-color: nth($color-secundario, 2) !important;
+            }
+            }
+            .collapse{
+                .navbar-nav{
+                    .nav-item{
+                        a{
+                            color: nth($color-secundario, 1)  !important;
+                        }
+                        a:hover{
+                            background-color: $color-principal;
+                            color: white !important;
+                        }
+                        .nav-link{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+    }
+}

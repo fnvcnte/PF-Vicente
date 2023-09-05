@@ -1,0 +1,26 @@
+
+//Imports
+@import "./utils/variables";
+@import "./utils/listas";
+@import "./utils/mixin";
+@import "./utils/globals";
+@import "./utils/extend";
+
+//configuracion
+@import "./base/reset";
+
+//layout
+@import "./layout/header";
+@import "./layout/footer";
+
+//paginas
+@import "./views/inicio";
+@import "./views/portafolio";
+@import "./views/dondeir";
+@import "./views/sobrenosotros";
+@import "./views/contacto";
+
+
+
+
+

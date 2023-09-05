@@ -1,0 +1,5 @@
+//Breackpoints
+$breakpoint-tablet: 768px;    // Para tablets
+$breakpoint-desktop: 1024px;  // Para Ordenadores
+
+$breakpoint-desktop-minus-1: #{$breakpoint-desktop - 1}px;

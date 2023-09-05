@@ -1,0 +1,686 @@
+main #grilla #contenedorInicio2 .textoInicio3, main #grilla #contenedorInicio2 .textoInicio2, main #grilla #contenedorInicio2 .textoInicio1 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+main #grilla #contenedorInicio2 .textoInicio3 p, main #grilla #contenedorInicio2 .textoInicio2 p, main #grilla #contenedorInicio2 .textoInicio1 p {
+  padding: 7px;
+  font-size: 17px;
+}
+
+/* Configuracion General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+header {
+  display: flex;
+  background-image: linear-gradient(#0b0a16, #19182e);
+  padding-bottom: 20px;
+}
+header .navbar {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 70px;
+  font-size: 13px;
+}
+header .navbar .container-fluid img {
+  width: 300px;
+  margin-right: 50px;
+}
+header .navbar .container-fluid .navbar-toggler {
+  background-color: rgb(207, 207, 207) !important;
+}
+header .navbar .collapse .navbar-nav .nav-item a {
+  color: rgb(204, 204, 86) !important;
+}
+header .navbar .collapse .navbar-nav .nav-item a:hover {
+  background-color: #0b0a16;
+  color: white !important;
+}
+header .navbar .collapse .navbar-nav .nav-item .nav-link {
+  margin-left: 15px;
+}
+
+footer {
+  font-size: 15px;
+  color: rgb(204, 204, 86);
+  height: 15vh;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(204, 204, 86);
+  margin-left: 20px;
+}
+footer .contenedorFooter {
+  background-image: linear-gradient(#19182e, #0b0a16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+footer .contenedorFooter .footerTexto {
+  padding-bottom: 20px;
+}
+footer .contenedorFooter .footerRedes {
+  display: flex;
+  padding: 15px;
+  margin-right: 40px;
+}
+footer .contenedorFooter .footerRedes .iconosRedes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+footer .contenedorFooter .footerRedes .iconosRedes a {
+  display: flex;
+  flex-direction: row;
+}
+footer .contenedorFooter .footerRedes .iconosRedes img {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+}
+
+/* Pagina Inicio */
+main .tituloQuienes {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+}
+main h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+}
+main #grilla #contenedorInicio1 div .imagenInicio1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main #grilla #contenedorInicio1 div .imagenInicio2 {
+  display: none;
+}
+main #grilla #contenedorInicio1 div .imagenInicio3 {
+  display: none;
+}
+main #grilla #contenedorInicio2 .textoInicio2 {
+  display: none;
+}
+main #grilla #contenedorInicio2 .textoInicio3 {
+  display: none;
+}
+main #grilla #contenedorInicio3 div .imagenInicio6 {
+  display: none;
+}
+main #grilla #contenedorInicio3 div .imagenInicio5 {
+  display: none;
+}
+main #grilla #contenedorInicio3 div .imagenInicio4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Pagina Inicio */
+@media (min-width: 768px) {
+  main #grilla {
+    display: grid;
+    grid-template-areas: "imagen1 imagen1" "texto1 texto1" "imagen2 imagen2" "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+  }
+  main #grilla #contenedorInicio1 {
+    grid-area: imagen1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main #grilla #contenedorInicio1 div {
+    margin-top: 50px;
+  }
+  main #grilla #contenedorInicio1 div .imagenInicio1 {
+    height: 500px;
+  }
+  main #grilla #contenedorInicio1 div .imagenInicio2 {
+    display: none;
+  }
+  main #grilla #contenedorInicio1 div .imagenInicio3 {
+    display: grid;
+    height: 500px;
+  }
+  main #grilla #contenedorInicio2 {
+    display: grid;
+    grid-area: texto1;
+    text-align: justify;
+  }
+  main #grilla #contenedorInicio2 .textoInicio2 {
+    display: grid;
+  }
+  main #grilla #contenedorInicio3 {
+    grid-area: imagen2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  main #grilla #contenedorInicio3 div {
+    margin-bottom: 50px;
+  }
+  main #grilla #contenedorInicio3 div .imagenInicio6 {
+    display: grid;
+    height: 500px;
+  }
+  main #grilla #contenedorInicio3 div .imagenInicio5 {
+    display: grid;
+    height: 500px;
+  }
+  main #grilla #contenedorInicio3 div .imagenInicio4 {
+    display: none;
+  }
+}
+/* Pagina Inicio */
+@media (min-width: 1024px) {
+  main #grilla {
+    display: grid;
+    grid-template-areas: "imagen1 texto1 imagen2" "imagen1 texto1 imagen2" "imagen1 texto1 imagen2" "footer footer footer";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 1fr;
+    padding-bottom: 20px;
+  }
+  main #grilla #contenedorInicio1 {
+    display: grid;
+    grid-area: imagen1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main #grilla #contenedorInicio1 div .imagenInicio1 {
+    border-radius: 15%;
+    width: 100%;
+    object-fit: object-fit;
+  }
+  main #grilla #contenedorInicio1 div .imagenInicio2 {
+    display: grid;
+    border-radius: 15%;
+    width: 100%;
+    object-fit: object-fit;
+  }
+  main #grilla #contenedorInicio1 div .imagenInicio3 {
+    display: grid;
+    border-radius: 15%;
+    width: 100%;
+    object-fit: object-fit;
+  }
+  main #grilla #contenedorInicio2 {
+    display: grid;
+    grid-area: texto1;
+  }
+  main #grilla #contenedorInicio2 .textoInicio3 {
+    display: grid;
+  }
+  main #grilla #contenedorInicio2 div {
+    text-align: justify;
+  }
+  main #grilla #contenedorInicio3 {
+    display: grid;
+    grid-area: imagen2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main #grilla #contenedorInicio3 div {
+    margin-top: 90px;
+  }
+  main #grilla #contenedorInicio3 div .imagenInicio6 {
+    display: grid;
+    border-radius: 15%;
+    width: 100%;
+    object-fit: object-fit;
+  }
+  main #grilla #contenedorInicio3 div .imagenInicio5 {
+    display: grid;
+    border-radius: 15%;
+    width: 100%;
+    object-fit: object-fit;
+  }
+  main #grilla #contenedorInicio3 div .imagenInicio4 {
+    display: grid;
+    border-radius: 15%;
+    border-radius: 15%;
+    width: 100%;
+    object-fit: object-fit;
+  }
+  footer .contenedorFooter {
+    align-items: center;
+  }
+  footer .contenedorFooter .footerRedes .iconosRedes {
+    flex-direction: row;
+  }
+}
+/* Pagina Portafolio */
+main {
+  /* vista desktop */
+  /* vista mobile */
+}
+main #tituloPortafolio {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+}
+main .portafolio {
+  display: none;
+}
+main #carouselExample {
+  margin: 20px;
+  padding: 5px;
+}
+main #carouselExample img {
+  border-radius: 5%;
+  height: 70vh;
+}
+
+/* Pagina Portafolio */
+@media (min-width: 768px) {
+  main .portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+  }
+  main .portafolio .imagenPortafolio {
+    height: 400px;
+    width: 400px;
+    margin-top: 20px;
+  }
+  main .portafolio .imagenPortafolio img {
+    width: 100%;
+    object-fit: cover;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10%;
+    aspect-ratio: 1/1;
+  }
+  main .portafolio .imagenPortafolio img:hover {
+    box-shadow: 10px 13px 10px black;
+    top: 10%;
+    left: 10%;
+    transform: scale(1.2) translate(-10%, -10%);
+    position: relative;
+    aspect-ratio: unset;
+    z-index: 1;
+  }
+  main .portafolio .imagenPortafolio p {
+    display: none;
+  }
+  main #carouselExample {
+    display: none;
+  }
+}
+/* Pagina Portafolio */
+@media (min-width: 1024px) {
+  main {
+    position: relative;
+  }
+  main .portafolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+  }
+  main #carouselExample {
+    display: none;
+  }
+}
+/* Pagina Donde Ir */
+main section .titulo_donde {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+}
+main div .menuDondeIr {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  color: #0b0a16;
+}
+main div .menuDondeIr li a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0px;
+  border: 1px solid #0b0a16;
+  padding: 4px 10px;
+  color: #0b0a16;
+}
+main div .menuDondeIr li a:hover {
+  font-size: 13px;
+  background-color: #0b0a16;
+  color: white !important;
+}
+main div .menuDondeIr li a:active {
+  font-size: 10px;
+}
+main section #grilla2 .textoMonumentos {
+  grid-area: texto;
+  margin: 10px 35px;
+  text-align: justify;
+}
+main section #grilla2 .textoMonumentos p {
+  font-size: 17px;
+}
+main section #grilla2 .imagenMonumentos {
+  grid-area: imagen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 5px;
+}
+main section #grilla2 .imagenMonumentos img {
+  margin: 10px;
+  padding: 5px;
+  width: 400px;
+  height: 340px;
+}
+main section #grilla2 .imagenMonumentos p {
+  margin: 5px;
+  text-align: justify;
+  font-size: 17px;
+}
+main section #grilla2 .mapaMonumento {
+  grid-area: mapa;
+  align-items: center;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+}
+main section #grilla2 .mapaMonumento p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+main section #grilla2 .mapaMonumento .iframe {
+  width: 400px;
+  height: 350px;
+}
+
+/* Pagina Donde Ir */
+@media (min-width: 768px) {
+  main div .menuDondeIr li {
+    margin-left: 15px;
+  }
+  main section #grilla2 {
+    display: grid;
+    grid-template-areas: "texto texto" "imagen mapa" "imagen mapa";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  main section #grilla2 .textoMonumentos {
+    grid-area: texto;
+  }
+  main section #grilla2 .imagenMonumentos {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section #grilla2 .imagenMonumentos img {
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 350px;
+  }
+  main section #grilla2 .imagenMonumentos p {
+    margin: 5px;
+    text-align: justify;
+    font-size: 17px;
+  }
+  main section #grilla2 .imagenMonumentos .monumentoText {
+    text-align: justify;
+  }
+  main section #grilla2 .mapaMonumento {
+    grid-area: mapa;
+  }
+}
+/* Pagina Donde Ir */
+@media (min-width: 1024px) {
+  main div .menuDondeIr li {
+    margin-left: 15px;
+  }
+  main section #monumentos {
+    margin-top: 50px;
+  }
+  main section #grilla2 {
+    display: grid;
+    grid-template-areas: "imagen texto mapa" "imagen texto mapa" "imagen texto mapa";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto auto auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  main section #grilla2 .textoMonumentos {
+    grid-area: texto;
+    display: flex;
+    margin: 10px 15px;
+    text-align: justify;
+    font-size: 15px;
+  }
+  main section #grilla2 .imagenMonumentos {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section #grilla2 .imagenMonumentos img {
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 350px;
+  }
+  main section #grilla2 .imagenMonumentos p {
+    margin: 5px;
+    text-align: justify;
+    font-size: 17px;
+  }
+  main section #grilla2 .imagenMonumentos .monumentoText {
+    text-align: justify;
+  }
+  main section #grilla2 .mapaMonumento {
+    grid-area: mapa;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  main section #grilla2 .mapaMonumento p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  main section #grilla2 .mapaMonumento .iframe {
+    width: 400px;
+    height: 350px;
+  }
+}
+/* Pagina Sobre Nosotros */
+main .contenedorSobreNosotros .textoSobreNosotros .titulo_sobre {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+}
+main .contenedorSobreNosotros .textoSobreNosotros p {
+  margin: 10px 30px;
+  text-align: justify;
+  font-size: 17px;
+}
+main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros {
+  display: flex;
+  justify-content: center;
+}
+main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes {
+  width: 110px;
+  height: 112px;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes:hover {
+  opacity: 0.5;
+}
+main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes2 {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
+main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes2:hover {
+  opacity: 0.5;
+}
+main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes3 {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
+main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes3:hover {
+  opacity: 0.5;
+}
+main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+  color: #0b0a16;
+}
+
+/* Pagina Sobre Nosotros */
+@media (min-width: 1024px) {
+  main .contenedorSobreNosotros {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros {
+    width: 50%;
+    margin-left: 60px;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
+    padding: 15px;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto:hover {
+    background-color: #0b0a16;
+    color: white;
+    border-radius: 0% 20%;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto:active {
+    font-size: 10px;
+  }
+}
+/* Pagina Contacto */
+main section .tituloContacto {
+  text-align: start;
+  margin-right: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+main form {
+  margin: 10px 50px;
+  text-align: start;
+  border: 3px outset rgb(207, 207, 207);
+  padding: 15px;
+  margin-bottom: 50px;
+}
+main form .titulo_form {
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+main form div {
+  padding-bottom: 5px;
+}
+
+/* Pagina Contacto */
+@media (min-width: 768px) {
+  .mainContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .mainContacto section .tituloContacto {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+  }
+  .mainContacto form {
+    width: 35%;
+    max-width: 500px;
+  }
+  .mainContacto form .titulo_form {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+  }
+}
+/* Pagina Contacto */
+@media (min-width: 1024px) {
+  .mainContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .mainContacto section .tituloContacto {
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+  }
+  .mainContacto form {
+    width: 35%;
+    max-width: 500px;
+  }
+  .mainContacto form .titulo_form {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

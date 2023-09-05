@@ -1,0 +1,30 @@
+//mixin con parametros
+
+@mixin grid{
+    display: grid;
+    border-radius: 15%;
+}
+
+@mixin contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+@mixin contenedortlet{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@mixin imagen ($width, $object-fit){
+    width: $width;
+    object-fit: object-fit;
+}
+
+@mixin titulos{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+}

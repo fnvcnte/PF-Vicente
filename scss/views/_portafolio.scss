@@ -1,0 +1,84 @@
+//Vista mobile
+    /* Pagina Portafolio */
+    main{
+        #tituloPortafolio{
+            @include titulos;
+        }
+
+        /* vista desktop */
+        .portafolio{
+            display: none;
+        }
+
+        /* vista mobile */
+        #carouselExample{
+            margin: 20px;
+            padding: 5px;
+            img{
+                border-radius: 5%;
+                height: 70vh;
+            }
+        }
+    }
+
+//Vista tablet
+    /* Pagina Portafolio */
+    @media (min-width: $breakpoint-tablet) {
+    main{
+            .portafolio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 20px;
+                padding: 30px;
+                .imagenPortafolio{
+                    height: 400px;
+                    width: 400px;
+                    margin-top: 20px;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                        margin: 10px;
+                        padding: 5px;
+                        border-radius: 10%;
+                        aspect-ratio: 1 / 1;
+                        &:hover{
+                            box-shadow: 10px 13px 10px black;
+                            top: 10%;
+                            left: 10%;
+                            transform: scale(1.2) translate(-10%, -10%);
+                            position: relative;
+                            aspect-ratio: unset;
+                            z-index: 1;
+                        }
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+            }
+            #carouselExample{
+                display: none;
+            }
+    }
+    } 
+
+//Vista Ordenador
+    /* Pagina Portafolio */
+    @media (min-width: $breakpoint-desktop) {
+    main{
+        position: relative;
+            .portafolio{
+                display: flex;
+                flex-wrap:wrap;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 20px;
+                padding: 30px;
+            }
+            #carouselExample{
+                display: none;
+            }
+    }
+    }
