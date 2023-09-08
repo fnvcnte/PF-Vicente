@@ -1,0 +1,24 @@
+/* boton subir arriba */
+@media (min-width: $breakpoint-tablet){ 
+main{
+    section{ 
+        .sticky{ 
+            a{
+                display: grid;
+                position: fixed;
+                bottom: 13%; 
+                right: 20px; 
+                background-color: $color-principal;
+                color: #fff; 
+                padding: 10px 20px;
+                border-radius: 5px; 
+                text-decoration: none;
+                font-size: 15px;
+                &:active{
+                    font-size: 14px;
+                }
+            }
+        } 
+    }    
+}
+}

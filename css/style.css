@@ -21,12 +21,15 @@ html {
 
 body {
   font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
   display: flex;
   background-image: linear-gradient(#0b0a16, #19182e);
   padding-bottom: 20px;
+  margin: 0 auto;
+  padding: 0 0;
 }
 header .navbar {
   margin: 0 auto;
@@ -35,11 +38,15 @@ header .navbar {
   font-size: 13px;
 }
 header .navbar .container-fluid img {
-  width: 300px;
+  width: 200px;
   margin-right: 50px;
+  margin-bottom: 10px;
 }
 header .navbar .container-fluid .navbar-toggler {
   background-color: rgb(207, 207, 207) !important;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 header .navbar .collapse .navbar-nav .nav-item a {
   color: rgb(204, 204, 86) !important;
@@ -52,6 +59,11 @@ header .navbar .collapse .navbar-nav .nav-item .nav-link {
   margin-left: 15px;
 }
 
+@media (min-width: 768px) {
+  header .navbar .container-fluid img {
+    width: 270px;
+  }
+}
 footer {
   font-size: 15px;
   color: rgb(204, 204, 86);
@@ -72,6 +84,7 @@ footer .contenedorFooter {
 }
 footer .contenedorFooter .footerTexto {
   padding-bottom: 20px;
+  font-size: 13px !important;
 }
 footer .contenedorFooter .footerRedes {
   display: flex;
@@ -94,6 +107,11 @@ footer .contenedorFooter .footerRedes .iconosRedes img {
   padding: 4px;
 }
 
+@media (min-width: 768px) {
+  footer {
+    position: relative;
+  }
+}
 /* Pagina Inicio */
 main .tituloQuienes {
   text-align: center;
@@ -115,6 +133,9 @@ main #grilla #contenedorInicio1 div .imagenInicio2 {
 }
 main #grilla #contenedorInicio1 div .imagenInicio3 {
   display: none;
+}
+main #grilla #contenedorInicio2 {
+  padding: 5px;
 }
 main #grilla #contenedorInicio2 .textoInicio2 {
   display: none;
@@ -154,6 +175,7 @@ main #grilla #contenedorInicio3 div .imagenInicio4 {
   }
   main #grilla #contenedorInicio1 div .imagenInicio1 {
     height: 500px;
+    border-radius: 10px;
   }
   main #grilla #contenedorInicio1 div .imagenInicio2 {
     display: none;
@@ -161,6 +183,7 @@ main #grilla #contenedorInicio3 div .imagenInicio4 {
   main #grilla #contenedorInicio1 div .imagenInicio3 {
     display: grid;
     height: 500px;
+    border-radius: 10px;
   }
   main #grilla #contenedorInicio2 {
     display: grid;
@@ -182,10 +205,12 @@ main #grilla #contenedorInicio3 div .imagenInicio4 {
   main #grilla #contenedorInicio3 div .imagenInicio6 {
     display: grid;
     height: 500px;
+    border-radius: 10px;
   }
   main #grilla #contenedorInicio3 div .imagenInicio5 {
     display: grid;
     height: 500px;
+    border-radius: 10px;
   }
   main #grilla #contenedorInicio3 div .imagenInicio4 {
     display: none;
@@ -291,7 +316,7 @@ main #carouselExample {
 }
 main #carouselExample img {
   border-radius: 5%;
-  height: 70vh;
+  height: 60vh;
 }
 
 /* Pagina Portafolio */
@@ -351,7 +376,7 @@ main #carouselExample img {
   }
 }
 /* Pagina Donde Ir */
-main section .titulo_donde {
+main section #tituloDonde {
   text-align: center;
   font-size: 40px;
   margin: 30px;
@@ -386,25 +411,26 @@ main section #grilla2 .textoMonumentos {
   text-align: justify;
 }
 main section #grilla2 .textoMonumentos p {
-  font-size: 17px;
+  font-size: 15px;
 }
 main section #grilla2 .imagenMonumentos {
   grid-area: imagen;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 5px;
+  margin: 10px 20px;
 }
 main section #grilla2 .imagenMonumentos img {
   margin: 10px;
   padding: 5px;
-  width: 400px;
+  width: 300px;
   height: 340px;
 }
 main section #grilla2 .imagenMonumentos p {
   margin: 5px;
   text-align: justify;
-  font-size: 17px;
+  font-size: 15px;
 }
 main section #grilla2 .mapaMonumento {
   grid-area: mapa;
@@ -423,6 +449,9 @@ main section #grilla2 .mapaMonumento .iframe {
   width: 400px;
   height: 350px;
 }
+main section .sticky {
+  display: none;
+}
 
 /* Pagina Donde Ir */
 @media (min-width: 768px) {
@@ -434,11 +463,14 @@ main section #grilla2 .mapaMonumento .iframe {
     grid-template-areas: "texto texto" "imagen mapa" "imagen mapa";
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
   }
   main section #grilla2 .textoMonumentos {
     grid-area: texto;
+  }
+  main section #grilla2 .textoMonumentos p {
+    font-size: 17px;
   }
   main section #grilla2 .imagenMonumentos {
     grid-area: imagen;
@@ -454,15 +486,18 @@ main section #grilla2 .mapaMonumento .iframe {
     height: 350px;
   }
   main section #grilla2 .imagenMonumentos p {
-    margin: 5px;
+    margin: 10px 15px;
     text-align: justify;
-    font-size: 17px;
+    font-size: 15px;
   }
   main section #grilla2 .imagenMonumentos .monumentoText {
     text-align: justify;
   }
   main section #grilla2 .mapaMonumento {
     grid-area: mapa;
+  }
+  main section .sticky {
+    display: grid;
   }
 }
 /* Pagina Donde Ir */
@@ -611,8 +646,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
 }
 /* Pagina Contacto */
 main section .tituloContacto {
-  text-align: start;
-  margin-right: 250px;
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 30px;
@@ -680,6 +714,24 @@ main form div {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
+  }
+}
+/* boton subir arriba */
+@media (min-width: 768px) {
+  main section .sticky a {
+    display: grid;
+    position: fixed;
+    bottom: 13%;
+    right: 20px;
+    background-color: #0b0a16;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  main section .sticky a:active {
+    font-size: 14px;
   }
 }
 

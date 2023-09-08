@@ -18,6 +18,7 @@ footer{
         padding-left: 20px;
         .footerTexto{
             padding-bottom: 20px;
+            font-size: 13px !important;
         }
         .footerRedes{
             display: flex;
@@ -40,4 +41,11 @@ footer{
             }
         }
     }
+}
+
+@media (min-width: $breakpoint-tablet){
+footer{
+
+    position: relative;
+}
 }

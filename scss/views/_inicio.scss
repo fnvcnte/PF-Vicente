@@ -1,5 +1,5 @@
 // Media query para mobile
-    /* Pagina Inicio */
+    /* Pagina Inicio */  
     main{
         .tituloQuienes{
             @include titulos;
@@ -26,6 +26,7 @@
                 }
             }
             #contenedorInicio2{
+                padding: 5px;
                 .textoInicio1{
                     @extend %estiloinicio;
                     p{
@@ -86,13 +87,15 @@
                         margin-top: 50px;
                         .imagenInicio1{
                             height: 500px;
+                            border-radius: 10px;
                         }
                         .imagenInicio2{
-                            display: none
+                            display: none;
                         }
                         .imagenInicio3{
                             display: grid;
                             height: 500px;
+                            border-radius: 10px;
                         }
                     }
                 }
@@ -112,10 +115,12 @@
                         .imagenInicio6{
                             display: grid;
                             height: 500px;
+                            border-radius: 10px;
                         }
                         .imagenInicio5{
                             display: grid;
                             height: 500px;
+                            border-radius: 10px;
                         }
                         .imagenInicio4{
                             display: none

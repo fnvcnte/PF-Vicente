@@ -2,7 +2,7 @@
     /* Pagina Donde Ir */
     main{
         section{
-            .titulo_donde{
+            #tituloDonde{
                 @include titulos;
             }
         }
@@ -36,30 +36,32 @@
         }
         section{
             #grilla2{
+                
                 .textoMonumentos{
                     grid-area: texto; 
                     margin: 10px 35px;
                     text-align: justify;
                     p{
-                        font-size: 17px;
+                        font-size: 15px;
                     }
                 }
                 .imagenMonumentos{
                     grid-area: imagen; 
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    margin: 10px 5px;
+                    margin: 10px 20px;
                     img{
                         margin: 10px;
                         padding: 5px;
-                        width: 400px;
+                        width: 300px;
                         height: 340px;
                     }
                     p{
                         margin: 5px;
                         text-align: justify;
-                        font-size: 17px;
+                        font-size: 15px;
                     }
                 }
                 .mapaMonumento{
@@ -81,6 +83,11 @@
                 }
             }
         }
+        section{    
+            .sticky{
+                display: none;
+            }
+        }  
     }
 
 //Vista Tablet
@@ -95,8 +102,6 @@
                         }
                     }
                     section{
-                        
-            
                         #grilla2{
                             display: grid;
                             grid-template-areas: 
@@ -105,10 +110,12 @@
                             "imagen mapa";
                             grid-template-columns: 50% 50%;
                             grid-template-rows: auto auto auto auto;
-                            margin-left: 20px;
-                            margin-right: 20px;
+                            margin-left: 0;
+                            margin-right: 0;
                             .textoMonumentos{
                                 grid-area: texto; 
+                                p{font-size: 17px;
+                                }
                             }
                             .imagenMonumentos{
                                 grid-area: imagen; 
@@ -123,9 +130,9 @@
                                     height: 350px;
                                 }
                                 p{
-                                    margin: 5px;
+                                    margin: 10px 15px;
                                     text-align: justify;
-                                    font-size: 17px;
+                                    font-size: 15px;
                                 }
                                 .monumentoText{
                                     text-align: justify;
@@ -136,6 +143,12 @@
                             }
                         }
                     }
+
+                    section{    
+                        .sticky{
+                            display: grid
+                        }
+                    } 
     }   
     }
 
