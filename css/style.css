@@ -38,15 +38,12 @@ header .navbar {
   font-size: 13px;
 }
 header .navbar .container-fluid img {
-  width: 200px;
+  width: 150px;
   margin-right: 50px;
   margin-bottom: 10px;
 }
 header .navbar .container-fluid .navbar-toggler {
   background-color: rgb(207, 207, 207) !important;
-  margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
 }
 header .navbar .collapse .navbar-nav .nav-item a {
   color: rgb(204, 204, 86) !important;
@@ -289,6 +286,7 @@ main #grilla #contenedorInicio3 div .imagenInicio4 {
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
+    padding-right: 10px;
   }
   footer .contenedorFooter {
     align-items: center;
@@ -340,6 +338,7 @@ main #carouselExample img {
     padding: 5px;
     border-radius: 10%;
     aspect-ratio: 1/1;
+    transition: all 0.7s;
   }
   main .portafolio .imagenPortafolio img:hover {
     box-shadow: 10px 13px 10px black;
@@ -396,6 +395,7 @@ main div .menuDondeIr li a {
   border: 1px solid #0b0a16;
   padding: 4px 10px;
   color: #0b0a16;
+  transition: all 0.5s;
 }
 main div .menuDondeIr li a:hover {
   font-size: 13px;
@@ -404,6 +404,13 @@ main div .menuDondeIr li a:hover {
 }
 main div .menuDondeIr li a:active {
   font-size: 10px;
+}
+main section h2 {
+  margin-top: 75px;
+}
+main section h3 {
+  text-align: center;
+  font-size: 20px;
 }
 main section #grilla2 .textoMonumentos {
   grid-area: texto;
@@ -446,6 +453,50 @@ main section #grilla2 .mapaMonumento p {
   text-decoration: underline;
 }
 main section #grilla2 .mapaMonumento .iframe {
+  width: 400px;
+  height: 350px;
+}
+main section #grilla3 .textoMonumentos {
+  grid-area: texto;
+  margin: 10px 35px;
+  text-align: justify;
+}
+main section #grilla3 .textoMonumentos p {
+  font-size: 15px;
+}
+main section #grilla3 .imagenMonumentos {
+  grid-area: imagen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+main section #grilla3 .imagenMonumentos img {
+  margin: 10px;
+  padding: 5px;
+  width: 300px;
+  height: 340px;
+}
+main section #grilla3 .imagenMonumentos p {
+  margin: 5px;
+  text-align: justify;
+  font-size: 15px;
+}
+main section #grilla3 .mapaMonumento {
+  grid-area: mapa;
+  align-items: center;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+}
+main section #grilla3 .mapaMonumento p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+main section #grilla3 .mapaMonumento .iframe {
   width: 400px;
   height: 350px;
 }
@@ -496,6 +547,44 @@ main section .sticky {
   main section #grilla2 .mapaMonumento {
     grid-area: mapa;
   }
+  main section #grilla3 {
+    display: grid;
+    grid-template-areas: "texto texto" "imagen mapa" "imagen mapa";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main section #grilla3 .textoMonumentos {
+    grid-area: texto;
+  }
+  main section #grilla3 .textoMonumentos p {
+    font-size: 17px;
+  }
+  main section #grilla3 .imagenMonumentos {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section #grilla3 .imagenMonumentos img {
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 350px;
+  }
+  main section #grilla3 .imagenMonumentos p {
+    margin: 10px 15px;
+    text-align: justify;
+    font-size: 15px;
+  }
+  main section #grilla3 .imagenMonumentos .monumentoText {
+    text-align: justify;
+  }
+  main section #grilla3 .mapaMonumento {
+    grid-area: mapa;
+  }
   main section .sticky {
     display: grid;
   }
@@ -505,7 +594,7 @@ main section .sticky {
   main div .menuDondeIr li {
     margin-left: 15px;
   }
-  main section #monumentos {
+  main section h2 {
     margin-top: 50px;
   }
   main section #grilla2 {
@@ -562,6 +651,60 @@ main section .sticky {
     width: 400px;
     height: 350px;
   }
+  main section #grilla3 {
+    display: grid;
+    grid-template-areas: "imagen texto mapa" "imagen texto mapa" "imagen texto mapa";
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto auto auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  main section #grilla3 .textoMonumentos {
+    grid-area: texto;
+    display: flex;
+    margin: 10px 15px;
+    text-align: justify;
+    font-size: 15px;
+  }
+  main section #grilla3 .imagenMonumentos {
+    grid-area: imagen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main section #grilla3 .imagenMonumentos img {
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 350px;
+  }
+  main section #grilla3 .imagenMonumentos p {
+    margin: 5px;
+    text-align: justify;
+    font-size: 17px;
+  }
+  main section #grilla3 .imagenMonumentos .monumentoText {
+    text-align: justify;
+  }
+  main section #grilla3 .mapaMonumento {
+    grid-area: mapa;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  main section #grilla3 .mapaMonumento p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  main section #grilla3 .mapaMonumento .iframe {
+    width: 400px;
+    height: 350px;
+  }
 }
 /* Pagina Sobre Nosotros */
 main .contenedorSobreNosotros .textoSobreNosotros .titulo_sobre {
@@ -583,6 +726,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes {
   height: 112px;
   margin-top: 3px;
   margin-right: 10px;
+  transition: all 0.5s;
 }
 main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes:hover {
   opacity: 0.5;
@@ -591,6 +735,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes2 
   width: 100px;
   height: auto;
   margin: 10px;
+  transition: all 0.5s;
 }
 main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes2:hover {
   opacity: 0.5;
@@ -599,6 +744,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes3 
   width: 100px;
   height: auto;
   margin: 10px;
+  transition: all 0.5s;
 }
 main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes3:hover {
   opacity: 0.5;
@@ -608,7 +754,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
   justify-content: center;
   text-decoration: none;
   font-size: 15px;
-  margin: 10px;
+  margin: 40px;
   color: #0b0a16;
 }
 
@@ -634,6 +780,8 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
   }
   main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
     padding: 15px;
+    transition: all 0.5s;
+    margin: 10px;
   }
   main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto:hover {
     background-color: #0b0a16;
@@ -645,49 +793,53 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
   }
 }
 /* Pagina Contacto */
-main section .tituloContacto {
+.mainContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContacto section .tituloContacto {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
-main form {
+.mainContacto form {
   position: relative;
-  width: 100%;
-  height: 100vh;
+  width: 75%;
   background-image: url("../multimedia/imagenForm.png");
   background-size: cover;
-  margin: 20px 50px;
+  margin: 20px 45px;
   padding: 20px;
   text-align: start;
   border: 3px outset rgb(207, 207, 207);
   padding: 15px;
   margin-bottom: 50px;
-  filter: grayscale(90%);
+  filter: grayscale(80%);
 }
-main form .titulo_form {
+.mainContacto form .titulo_form {
   text-align: center;
   text-decoration: none;
   font-size: 25px;
   color: white;
 }
-main form .mb-3 {
+.mainContacto form .mb-3 {
   background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 10px;
 }
-main form h3 {
+.mainContacto form h3 {
   color: white;
   display: inline;
   background: rgba(100, 100, 100, 0.616);
   border-radius: 5px;
 }
-main form div {
+.mainContacto form div {
   padding-bottom: 5px;
 }
-main form div #text {
+.mainContacto form div #text {
   width: 100%;
 }
 
@@ -698,7 +850,6 @@ main form div #text {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
   .mainContacto section .tituloContacto {
     text-align: center;
@@ -706,8 +857,7 @@ main form div #text {
     margin: 30px;
   }
   .mainContacto form {
-    width: 35%;
-    max-width: 500px;
+    width: 50%;
   }
   .mainContacto form .titulo_form {
     text-align: center;
@@ -717,13 +867,6 @@ main form div #text {
 }
 /* Pagina Contacto */
 @media (min-width: 1024px) {
-  .mainContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
   .mainContacto section .tituloContacto {
     text-align: center;
     font-size: 40px;
@@ -731,12 +874,15 @@ main form div #text {
   }
   .mainContacto form {
     width: 35%;
-    max-width: 500px;
+    height: 600px;
   }
   .mainContacto form .titulo_form {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
+  }
+  .mainContacto form div {
+    margin-top: 10px;
   }
 }
 /* boton subir arriba */

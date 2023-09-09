@@ -24,6 +24,7 @@ main {
                     border: 1px solid $color-principal;
                     padding: 4px 10px;
                     color: $color-principal;
+                    transition: all 0.5s;
 
                     &:hover {
                         font-size: 13px;
@@ -40,8 +41,69 @@ main {
     }
 
     section {
+        h2{
+            margin-top: 75px;
+        }
+        h3{
+            text-align: center;
+            font-size: 20px;
+        }
         #grilla2 {
 
+            .textoMonumentos {
+                grid-area: texto;
+                margin: 10px 35px;
+                text-align: justify;
+
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            .imagenMonumentos {
+                grid-area: imagen;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 20px;
+
+                img {
+                    margin: 10px;
+                    padding: 5px;
+                    width: 300px;
+                    height: 340px;
+                }
+
+                p {
+                    margin: 5px;
+                    text-align: justify;
+                    font-size: 15px;
+                }
+            }
+
+            .mapaMonumento {
+                grid-area: mapa;
+                align-items: center;
+                margin: 10px 5px;
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    text-align: center;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    text-decoration: underline;
+                }
+
+                .iframe {
+                    width: 400px;
+                    height: 350px;
+                }
+            }
+        }
+
+        #grilla3 {
             .textoMonumentos {
                 grid-area: texto;
                 margin: 10px 35px;
@@ -164,6 +226,55 @@ main {
                     grid-area: mapa;
                 }
             }
+
+            #grilla3 {
+                display: grid;
+                grid-template-areas:
+                    "texto texto"
+                    "imagen mapa"
+                    "imagen mapa";
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto auto auto auto;
+                margin-left: 0;
+                margin-right: 0;
+
+                .textoMonumentos {
+                    grid-area: texto;
+
+                    p {
+                        font-size: 17px;
+                    }
+                }
+
+                .imagenMonumentos {
+                    grid-area: imagen;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    img {
+                        margin: 10px;
+                        padding: 5px;
+                        width: 300px;
+                        height: 350px;
+                    }
+
+                    p {
+                        margin: 10px 15px;
+                        text-align: justify;
+                        font-size: 15px;
+                    }
+
+                    .monumentoText {
+                        text-align: justify;
+                    }
+                }
+
+                .mapaMonumento {
+                    grid-area: mapa;
+                }
+            }
         }
 
         section {
@@ -187,11 +298,77 @@ main {
         }
 
         section {
-            #monumentos {
+            h2 {
                 margin-top: 50px;
             }
 
             #grilla2 {
+                display: grid;
+                grid-template-areas:
+                    "imagen texto mapa"
+                    "imagen texto mapa"
+                    "imagen texto mapa";
+                grid-template-columns: 30% 40% 30%;
+                grid-template-rows: auto auto auto;
+                margin-left: 20px;
+                margin-right: 20px;
+
+                .textoMonumentos {
+                    grid-area: texto;
+                    display: flex;
+                    margin: 10px 15px;
+                    text-align: justify;
+                    font-size: 15px;
+                }
+
+                .imagenMonumentos {
+                    grid-area: imagen;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    img {
+                        margin: 10px;
+                        padding: 5px;
+                        width: 300px;
+                        height: 350px;
+                    }
+
+                    p {
+                        margin: 5px;
+                        text-align: justify;
+                        font-size: 17px;
+                    }
+
+                    .monumentoText {
+                        text-align: justify;
+                    }
+                }
+
+                .mapaMonumento {
+                    grid-area: mapa;
+                    margin: 10px 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    p {
+                        text-align: center;
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                        text-decoration: underline;
+                    }
+
+                    .iframe {
+                        width: 400px;
+                        height: 350px;
+                    }
+                }
+            }
+
+            #grilla3 {
                 display: grid;
                 grid-template-areas:
                     "imagen texto mapa"

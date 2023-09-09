@@ -230,6 +230,7 @@ main {
                         @include grid;
                         border-radius: 15%;
                         @include imagen (100%, cover);
+                        padding-right: 10px;
                     }
                 }
             }
