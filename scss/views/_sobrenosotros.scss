@@ -1,95 +1,109 @@
 // Vista Mobile
-    /* Pagina Sobre Nosotros */
-    main{
-        .contenedorSobreNosotros{
-            .textoSobreNosotros{
-                .titulo_sobre{
-                    @include titulos;
+/* Pagina Sobre Nosotros */
+main {
+    .contenedorSobreNosotros {
+        .textoSobreNosotros {
+            .titulo_sobre {
+                @include titulos;
+            }
+
+            p {
+                margin: 10px 30px;
+                text-align: justify;
+                font-size: 17px;
+            }
+        }
+
+        .textoSobreNosotros2 {
+            .imagenSobreNosotros {
+                display: flex;
+                justify-content: center;
+
+                .redes {
+                    width: 110px;
+                    height: 112px;
+                    margin-top: 3px;
+                    margin-right: 10px;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
                 }
-                p{
-                    margin: 10px 30px;
-                    text-align: justify;
-                    font-size: 17px;
+
+                .redes2 {
+                    width: 100px;
+                    height: auto;
+                    margin: 10px;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+
+                .redes3 {
+                    width: 100px;
+                    height: auto;
+                    margin: 10px;
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
                 }
             }
-            .textoSobreNosotros2{
-                .imagenSobreNosotros{
+
+            div {
+                .enlaceContacto {
                     display: flex;
                     justify-content: center;
-                    .redes{
-                        width: 110px;
-                        height: 112px;
-                        margin-top: 3px;
-                        margin-right: 10px;
-                        &:hover{
-                            opacity: 0.5;
-                        }
-                    }
-                    .redes2{
-                        width: 100px;
-                        height: auto;
-                        margin: 10px;
-                        &:hover{
-                            opacity: 0.5;
-                        }
-                    }
-                    .redes3{
-                        width: 100px;
-                        height: auto;
-                        margin: 10px;
-                        &:hover{
-                            opacity: 0.5;
-                        }
-                    }
+                    text-decoration: none;
+                    font-size: 15px;
+                    margin: 10px;
+                    color: $color-principal;
                 }
-                div{
-                    .enlaceContacto{
-                        display: flex;
-                        justify-content: center;
-                        text-decoration: none;
-                        font-size: 15px;
-                        margin: 10px;
-                        color: $color-principal;
+            }
+        }
+    }
+}
+
+//Vista ordenador
+/* Pagina Sobre Nosotros */
+@media (min-width: $breakpoint-desktop) {
+    main {
+        .contenedorSobreNosotros {
+            display: flex;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 100px;
+            margin-top: 50px;
+
+            .textoSobreNosotros {
+                width: 50%;
+                margin-left: 60px;
+            }
+
+            .textoSobreNosotros2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+
+                div {
+                    .enlaceContacto {
+                        padding: 15px;
+
+                        &:hover {
+                            background-color: $color-principal;
+                            color: white;
+                            border-radius: 0% 20%;
+                        }
+
+                        &:active {
+                            font-size: 10px;
+                        }
                     }
                 }
             }
         }
     }
-
-//Vista ordenador
-    /* Pagina Sobre Nosotros */
-    @media (min-width: $breakpoint-desktop) {
-        main{
-                    .contenedorSobreNosotros{
-                        display: flex;
-                        margin-left: 20px;
-                        margin-right: 20px;
-                        margin-bottom: 100px;
-                        margin-top: 50px;
-                        .textoSobreNosotros{
-                            width: 50%;
-                            margin-left: 60px;
-                        }
-                        .textoSobreNosotros2{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            width: 50%;
-                            div{
-                                .enlaceContacto{
-                                    padding: 15px;
-                                    &:hover{
-                                        background-color: $color-principal;
-                                        color: white;
-                                        border-radius: 0% 20%;
-                                    }
-                                    &:active{
-                                        font-size: 10px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-        }
-    }
+}

@@ -1,210 +1,250 @@
 // Media query para mobile
-    /* Pagina Inicio */  
-    main{
-        .tituloQuienes{
-            @include titulos;
-        }
-        h2{
-            text-align: center;
-            font-size: 30px;
-            margin: 30px;
-        }
-        #grilla{
-            #contenedorInicio1{
-                div{
-                    .imagenInicio1{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                    .imagenInicio2{
-                        display: none;
-                    }
-                    .imagenInicio3{
-                        display: none;
-                    }
+/* Pagina Inicio */
+main {
+    .tituloQuienes {
+        @include titulos;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        margin: 30px;
+    }
+
+    #grilla {
+        #contenedorInicio1 {
+            div {
+                .imagenInicio1 {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .imagenInicio2 {
+                    display: none;
+                }
+
+                .imagenInicio3 {
+                    display: none;
                 }
             }
-            #contenedorInicio2{
-                padding: 5px;
-                .textoInicio1{
-                    @extend %estiloinicio;
-                    p{
-                        @extend %estiloparrafo;
-                    }
-                }
-                .textoInicio2{
-                    display: none;
-                    @extend %estiloinicio;
-                    p{
-                        @extend %estiloparrafo;
-                    }
-                }
-                .textoInicio3{
-                    display: none;
-                    @extend %estiloinicio;
-                    p{
-                        @extend %estiloparrafo;
-                    }
+        }
+
+        #contenedorInicio2 {
+            padding: 5px;
+
+            .textoInicio1 {
+                @extend %estiloinicio;
+
+                p {
+                    @extend %estiloparrafo;
                 }
             }
-            #contenedorInicio3{
-                div{
-                    .imagenInicio6{
-                        display: none;
-                    }
-                    .imagenInicio5{
-                        display: none;
-                    }
-                    .imagenInicio4{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
+
+            .textoInicio2 {
+                display: none;
+                @extend %estiloinicio;
+
+                p {
+                    @extend %estiloparrafo;
+                }
+            }
+
+            .textoInicio3 {
+                display: none;
+                @extend %estiloinicio;
+
+                p {
+                    @extend %estiloparrafo;
+                }
+            }
+        }
+
+        #contenedorInicio3 {
+            div {
+                .imagenInicio6 {
+                    display: none;
+                }
+
+                .imagenInicio5 {
+                    display: none;
+                }
+
+                .imagenInicio4 {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
         }
     }
+}
 
 // Media query para tablet 
-    /* Pagina Inicio */
-    @media (min-width: $breakpoint-tablet){
-        main{
-            #grilla {
-                display: grid;
-                grid-template-areas:
+/* Pagina Inicio */
+@media (min-width: $breakpoint-tablet) {
+    main {
+        #grilla {
+            display: grid;
+            grid-template-areas:
                 "imagen1 imagen1"
                 "texto1 texto1"
                 "imagen2 imagen2"
                 "footer footer";
-                grid-template-columns: 50% 50%;
-                grid-template-rows: auto auto auto auto;
-                gap: 10px;
-                #contenedorInicio1{
-                    grid-area: imagen1;
-                    @include contenedortlet;
-                    div{
-                        margin-top: 50px;
-                        .imagenInicio1{
-                            height: 500px;
-                            border-radius: 10px;
-                        }
-                        .imagenInicio2{
-                            display: none;
-                        }
-                        .imagenInicio3{
-                            display: grid;
-                            height: 500px;
-                            border-radius: 10px;
-                        }
-                    }
-                }
-                #contenedorInicio2{
-                    display: grid;
-                    grid-area: texto1;
-                    text-align: justify;
-                    .textoInicio2{
-                        display: grid;
-                    }
-                }
-                #contenedorInicio3{
-                    grid-area: imagen2;
-                    @include contenedortlet;
-                    div{
-                        margin-bottom: 50px;
-                        .imagenInicio6{
-                            display: grid;
-                            height: 500px;
-                            border-radius: 10px;
-                        }
-                        .imagenInicio5{
-                            display: grid;
-                            height: 500px;
-                            border-radius: 10px;
-                        }
-                        .imagenInicio4{
-                            display: none
-                        }
-                    }
-                }
-            }
-        } 
-    }
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto auto auto;
+            gap: 10px;
 
-// Media query para ordenador
-    /* Pagina Inicio */
-    @media (min-width: $breakpoint-desktop) {       
-        main{
-            #grilla{
-                display: grid;
-                grid-template-areas:
-                "imagen1 texto1 imagen2"
-                "imagen1 texto1 imagen2"
-                "imagen1 texto1 imagen2"
-                "footer footer footer";
-                grid-template-columns: 30% 40% 30%;
-                grid-template-rows: 1fr;
-                padding-bottom: 20px;
-                #contenedorInicio1{
-                    display: grid;
-                    grid-area: imagen1;
-                    @include contenedor;
-                    div{
-                        .imagenInicio1{
-                            border-radius: 15%;
-                            @include imagen (100%, cover);
-                        }
-                        .imagenInicio2{
-                            @include grid; 
-                            @include imagen (100%, cover);
-                        }
-                        .imagenInicio3{
-                            @include grid;
-                            @include imagen (100%, cover);
-                        }
+            #contenedorInicio1 {
+                grid-area: imagen1;
+                @include contenedortlet;
+
+                div {
+                    margin-top: 50px;
+
+                    .imagenInicio1 {
+                        height: 500px;
+                        border-radius: 10px;
                     }
-                }
-                #contenedorInicio2{
-                    display: grid;
-                    grid-area: texto1;
-                    .textoInicio3{
+
+                    .imagenInicio2 {
+                        display: none;
+                    }
+
+                    .imagenInicio3 {
                         display: grid;
-                    }
-                    div{
-                        text-align: justify;
-                    }
-                }
-                #contenedorInicio3{
-                    display: grid;
-                    grid-area: imagen2;
-                   @include contenedor;
-                    div{
-                        margin-top: 90px;
-                        .imagenInicio6{
-                            @include grid;
-                            @include imagen (100%, cover);
-                        }
-                        .imagenInicio5{
-                            @include grid; 
-                            @include imagen (100%, cover);
-                        }
-                        .imagenInicio4{
-                            @include grid; 
-                            border-radius: 15%;
-                            @include imagen (100%, cover);
-                        }
+                        height: 500px;
+                        border-radius: 10px;
                     }
                 }
             }
-        } 
-        footer{
-            .contenedorFooter{
-                align-items: center;
-                .footerRedes{
-                    .iconosRedes{
-                        flex-direction: row;
+
+            #contenedorInicio2 {
+                display: grid;
+                grid-area: texto1;
+                text-align: justify;
+
+                .textoInicio2 {
+                    display: grid;
+                }
+            }
+
+            #contenedorInicio3 {
+                grid-area: imagen2;
+                @include contenedortlet;
+
+                div {
+                    margin-bottom: 50px;
+
+                    .imagenInicio6 {
+                        display: grid;
+                        height: 500px;
+                        border-radius: 10px;
+                    }
+
+                    .imagenInicio5 {
+                        display: grid;
+                        height: 500px;
+                        border-radius: 10px;
+                    }
+
+                    .imagenInicio4 {
+                        display: none
                     }
                 }
             }
         }
     }
+}
+
+// Media query para ordenador
+/* Pagina Inicio */
+@media (min-width: $breakpoint-desktop) {
+    main {
+        #grilla {
+            display: grid;
+            grid-template-areas:
+                "imagen1 texto1 imagen2"
+                "imagen1 texto1 imagen2"
+                "imagen1 texto1 imagen2"
+                "footer footer footer";
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: 1fr;
+            padding-bottom: 20px;
+
+            #contenedorInicio1 {
+                display: grid;
+                grid-area: imagen1;
+                @include contenedor;
+
+                div {
+                    .imagenInicio1 {
+                        border-radius: 15%;
+                        @include imagen (100%, cover);
+                    }
+
+                    .imagenInicio2 {
+                        @include grid;
+                        @include imagen (100%, cover);
+                    }
+
+                    .imagenInicio3 {
+                        @include grid;
+                        @include imagen (100%, cover);
+                    }
+                }
+            }
+
+            #contenedorInicio2 {
+                display: grid;
+                grid-area: texto1;
+
+                .textoInicio3 {
+                    display: grid;
+                }
+
+                div {
+                    text-align: justify;
+                }
+            }
+
+            #contenedorInicio3 {
+                display: grid;
+                grid-area: imagen2;
+                @include contenedor;
+
+                div {
+                    margin-top: 90px;
+
+                    .imagenInicio6 {
+                        @include grid;
+                        @include imagen (100%, cover);
+                    }
+
+                    .imagenInicio5 {
+                        @include grid;
+                        @include imagen (100%, cover);
+                    }
+
+                    .imagenInicio4 {
+                        @include grid;
+                        border-radius: 15%;
+                        @include imagen (100%, cover);
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .contenedorFooter {
+            align-items: center;
+
+            .footerRedes {
+                .iconosRedes {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
