@@ -45,9 +45,9 @@ main {
                     padding: 5px;
                     border-radius: 10%;
                     aspect-ratio: 1 / 1;
-                    transition: all 0.7s;
+                    transition: all 1s;
 
-                    &:hover {
+                    &:active {
                         box-shadow: 10px 13px 10px black;
                         top: 10%;
                         left: 10%;
