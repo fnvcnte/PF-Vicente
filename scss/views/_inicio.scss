@@ -12,7 +12,7 @@ main {
     }
 
     #grilla {
-        #contenedorInicio1 {
+        .contenedorInicio1 {
             div {
                 .imagenInicio1 {
                     width: 100%;
@@ -30,7 +30,7 @@ main {
             }
         }
 
-        #contenedorInicio2 {
+        .contenedorInicio2 {
             padding: 5px;
 
             .textoInicio1 {
@@ -60,7 +60,7 @@ main {
             }
         }
 
-        #contenedorInicio3 {
+        .contenedorInicio3 {
             div {
                 .imagenInicio6 {
                     display: none;
@@ -95,7 +95,7 @@ main {
             grid-template-rows: auto auto auto auto;
             gap: 10px;
 
-            #contenedorInicio1 {
+            .contenedorInicio1 {
                 grid-area: imagen1;
                 @include contenedortlet;
 
@@ -119,7 +119,7 @@ main {
                 }
             }
 
-            #contenedorInicio2 {
+            .contenedorInicio2 {
                 display: grid;
                 grid-area: texto1;
                 text-align: justify;
@@ -129,7 +129,7 @@ main {
                 }
             }
 
-            #contenedorInicio3 {
+            .contenedorInicio3 {
                 grid-area: imagen2;
                 @include contenedortlet;
 
@@ -172,7 +172,7 @@ main {
             grid-template-rows: 1fr;
             padding-bottom: 20px;
 
-            #contenedorInicio1 {
+            .contenedorInicio1 {
                 display: grid;
                 grid-area: imagen1;
                 @include contenedor;
@@ -181,21 +181,24 @@ main {
                     .imagenInicio1 {
                         border-radius: 15%;
                         @include imagen (100%, cover);
+                        width: 95%;
                     }
 
                     .imagenInicio2 {
                         @include grid;
                         @include imagen (100%, cover);
+                        width: 95%;
                     }
 
                     .imagenInicio3 {
                         @include grid;
                         @include imagen (100%, cover);
+                        width: 95%;
                     }
                 }
             }
 
-            #contenedorInicio2 {
+            .contenedorInicio2 {
                 display: grid;
                 grid-area: texto1;
 
@@ -208,7 +211,7 @@ main {
                 }
             }
 
-            #contenedorInicio3 {
+            .contenedorInicio3 {
                 display: grid;
                 grid-area: imagen2;
                 @include contenedor;
@@ -219,18 +222,20 @@ main {
                     .imagenInicio6 {
                         @include grid;
                         @include imagen (100%, cover);
+                        width: 95%;
                     }
 
                     .imagenInicio5 {
                         @include grid;
                         @include imagen (100%, cover);
+                        width: 95%;
                     }
 
                     .imagenInicio4 {
                         @include grid;
                         border-radius: 15%;
                         @include imagen (100%, cover);
-                        padding-right: 10px;
+                        width: 95%;
                     }
                 }
             }

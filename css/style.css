@@ -1,9 +1,9 @@
-main #grilla #contenedorInicio2 .textoInicio3, main #grilla #contenedorInicio2 .textoInicio2, main #grilla #contenedorInicio2 .textoInicio1 {
+main #grilla .contenedorInicio2 .textoInicio3, main #grilla .contenedorInicio2 .textoInicio2, main #grilla .contenedorInicio2 .textoInicio1 {
   margin-left: 15px;
   margin-right: 15px;
 }
 
-main #grilla #contenedorInicio2 .textoInicio3 p, main #grilla #contenedorInicio2 .textoInicio2 p, main #grilla #contenedorInicio2 .textoInicio1 p {
+main #grilla .contenedorInicio2 .textoInicio3 p, main #grilla .contenedorInicio2 .textoInicio2 p, main #grilla .contenedorInicio2 .textoInicio1 p {
   padding: 7px;
   font-size: 17px;
 }
@@ -118,33 +118,33 @@ main h2 {
   font-size: 30px;
   margin: 30px;
 }
-main #grilla #contenedorInicio1 div .imagenInicio1 {
+main #grilla .contenedorInicio1 div .imagenInicio1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-main #grilla #contenedorInicio1 div .imagenInicio2 {
+main #grilla .contenedorInicio1 div .imagenInicio2 {
   display: none;
 }
-main #grilla #contenedorInicio1 div .imagenInicio3 {
+main #grilla .contenedorInicio1 div .imagenInicio3 {
   display: none;
 }
-main #grilla #contenedorInicio2 {
+main #grilla .contenedorInicio2 {
   padding: 5px;
 }
-main #grilla #contenedorInicio2 .textoInicio2 {
+main #grilla .contenedorInicio2 .textoInicio2 {
   display: none;
 }
-main #grilla #contenedorInicio2 .textoInicio3 {
+main #grilla .contenedorInicio2 .textoInicio3 {
   display: none;
 }
-main #grilla #contenedorInicio3 div .imagenInicio6 {
+main #grilla .contenedorInicio3 div .imagenInicio6 {
   display: none;
 }
-main #grilla #contenedorInicio3 div .imagenInicio5 {
+main #grilla .contenedorInicio3 div .imagenInicio5 {
   display: none;
 }
-main #grilla #contenedorInicio3 div .imagenInicio4 {
+main #grilla .contenedorInicio3 div .imagenInicio4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -159,55 +159,55 @@ main #grilla #contenedorInicio3 div .imagenInicio4 {
     grid-template-rows: auto auto auto auto;
     gap: 10px;
   }
-  main #grilla #contenedorInicio1 {
+  main #grilla .contenedorInicio1 {
     grid-area: imagen1;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  main #grilla #contenedorInicio1 div {
+  main #grilla .contenedorInicio1 div {
     margin-top: 50px;
   }
-  main #grilla #contenedorInicio1 div .imagenInicio1 {
+  main #grilla .contenedorInicio1 div .imagenInicio1 {
     height: 500px;
     border-radius: 10px;
   }
-  main #grilla #contenedorInicio1 div .imagenInicio2 {
+  main #grilla .contenedorInicio1 div .imagenInicio2 {
     display: none;
   }
-  main #grilla #contenedorInicio1 div .imagenInicio3 {
+  main #grilla .contenedorInicio1 div .imagenInicio3 {
     display: grid;
     height: 500px;
     border-radius: 10px;
   }
-  main #grilla #contenedorInicio2 {
+  main #grilla .contenedorInicio2 {
     display: grid;
     grid-area: texto1;
     text-align: justify;
   }
-  main #grilla #contenedorInicio2 .textoInicio2 {
+  main #grilla .contenedorInicio2 .textoInicio2 {
     display: grid;
   }
-  main #grilla #contenedorInicio3 {
+  main #grilla .contenedorInicio3 {
     grid-area: imagen2;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  main #grilla #contenedorInicio3 div {
+  main #grilla .contenedorInicio3 div {
     margin-bottom: 50px;
   }
-  main #grilla #contenedorInicio3 div .imagenInicio6 {
+  main #grilla .contenedorInicio3 div .imagenInicio6 {
     display: grid;
     height: 500px;
     border-radius: 10px;
   }
-  main #grilla #contenedorInicio3 div .imagenInicio5 {
+  main #grilla .contenedorInicio3 div .imagenInicio5 {
     display: grid;
     height: 500px;
     border-radius: 10px;
   }
-  main #grilla #contenedorInicio3 div .imagenInicio4 {
+  main #grilla .contenedorInicio3 div .imagenInicio4 {
     display: none;
   }
 }
@@ -220,7 +220,7 @@ main #grilla #contenedorInicio3 div .imagenInicio4 {
     grid-template-rows: 1fr;
     padding-bottom: 20px;
   }
-  main #grilla #contenedorInicio1 {
+  main #grilla .contenedorInicio1 {
     display: grid;
     grid-area: imagen1;
     display: flex;
@@ -228,34 +228,37 @@ main #grilla #contenedorInicio3 div .imagenInicio4 {
     align-items: center;
     justify-content: space-around;
   }
-  main #grilla #contenedorInicio1 div .imagenInicio1 {
+  main #grilla .contenedorInicio1 div .imagenInicio1 {
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
+    width: 95%;
   }
-  main #grilla #contenedorInicio1 div .imagenInicio2 {
+  main #grilla .contenedorInicio1 div .imagenInicio2 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
+    width: 95%;
   }
-  main #grilla #contenedorInicio1 div .imagenInicio3 {
+  main #grilla .contenedorInicio1 div .imagenInicio3 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
+    width: 95%;
   }
-  main #grilla #contenedorInicio2 {
+  main #grilla .contenedorInicio2 {
     display: grid;
     grid-area: texto1;
   }
-  main #grilla #contenedorInicio2 .textoInicio3 {
+  main #grilla .contenedorInicio2 .textoInicio3 {
     display: grid;
   }
-  main #grilla #contenedorInicio2 div {
+  main #grilla .contenedorInicio2 div {
     text-align: justify;
   }
-  main #grilla #contenedorInicio3 {
+  main #grilla .contenedorInicio3 {
     display: grid;
     grid-area: imagen2;
     display: flex;
@@ -263,28 +266,30 @@ main #grilla #contenedorInicio3 div .imagenInicio4 {
     align-items: center;
     justify-content: space-around;
   }
-  main #grilla #contenedorInicio3 div {
+  main #grilla .contenedorInicio3 div {
     margin-top: 90px;
   }
-  main #grilla #contenedorInicio3 div .imagenInicio6 {
+  main #grilla .contenedorInicio3 div .imagenInicio6 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
+    width: 95%;
   }
-  main #grilla #contenedorInicio3 div .imagenInicio5 {
+  main #grilla .contenedorInicio3 div .imagenInicio5 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
+    width: 95%;
   }
-  main #grilla #contenedorInicio3 div .imagenInicio4 {
+  main #grilla .contenedorInicio3 div .imagenInicio4 {
     display: grid;
     border-radius: 15%;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
-    padding-right: 10px;
+    width: 95%;
   }
   footer .contenedorFooter {
     align-items: center;
@@ -405,22 +410,26 @@ main div .menuDondeIr li a:active {
 }
 main section h2 {
   margin-top: 75px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 50px 30%;
+  padding: 10px;
 }
 main section h3 {
   text-align: center;
   font-size: 20px;
 }
-main section #grilla2 {
+main section .grilla2 {
   margin-bottom: 100px;
 }
-main section #grilla2 .textoMonumentos {
+main section .grilla2 .textoDondeIr {
   margin: 10px 35px;
   text-align: justify;
 }
-main section #grilla2 .textoMonumentos p {
+main section .grilla2 .textoDondeIr p {
   font-size: 15px;
 }
-main section #grilla2 .imagenMonumentos {
+main section .grilla2 .imagenDondeIr {
   grid-area: imagen;
   display: flex;
   flex-direction: column;
@@ -428,42 +437,42 @@ main section #grilla2 .imagenMonumentos {
   align-items: center;
   margin: 10px 20px;
 }
-main section #grilla2 .imagenMonumentos img {
+main section .grilla2 .imagenDondeIr img {
   margin: 10px;
   padding: 5px;
   width: 300px;
   height: 340px;
 }
-main section #grilla2 .imagenMonumentos p {
+main section .grilla2 .imagenDondeIr p {
   margin: 5px;
   text-align: justify;
   font-size: 13px;
 }
-main section #grilla2 .mapaMonumento {
+main section .grilla2 .mapaDondeIr {
   grid-area: mapa;
   align-items: center;
   margin: 10px 5px;
   display: flex;
   flex-direction: column;
 }
-main section #grilla2 .mapaMonumento p {
+main section .grilla2 .mapaDondeIr p {
   text-align: center;
   margin-bottom: 10px;
   font-size: 20px;
   text-decoration: underline;
 }
-main section #grilla3 {
+main section .grilla3 {
   margin-bottom: 100px;
 }
-main section #grilla3 .textoMonumentos {
+main section .grilla3 .textoDondeIr {
   grid-area: texto;
   margin: 10px 35px;
   text-align: justify;
 }
-main section #grilla3 .textoMonumentos p {
+main section .grilla3 .textoDondeIr p {
   font-size: 15px;
 }
-main section #grilla3 .imagenMonumentos {
+main section .grilla3 .imagenDondeIr {
   grid-area: imagen;
   display: flex;
   flex-wrap: wrap;
@@ -471,25 +480,25 @@ main section #grilla3 .imagenMonumentos {
   align-items: center;
   margin: 10px 20px;
 }
-main section #grilla3 .imagenMonumentos img {
+main section .grilla3 .imagenDondeIr img {
   margin: 6px;
   padding: 3px;
   width: 200px;
   height: 250px;
 }
-main section #grilla3 .imagenMonumentos p {
+main section .grilla3 .imagenDondeIr p {
   margin: 5px;
   text-align: justify;
   font-size: 13px;
 }
-main section #grilla3 .mapaMonumento {
+main section .grilla3 .mapaDondeIr {
   grid-area: mapa;
   align-items: center;
   margin: 10px 5px;
   display: flex;
   flex-direction: column;
 }
-main section #grilla3 .mapaMonumento p {
+main section .grilla3 .mapaDondeIr p {
   text-align: center;
   margin-bottom: 10px;
   font-size: 20px;
@@ -504,7 +513,7 @@ main section .sticky {
   main div .menuDondeIr li {
     margin-left: 15px;
   }
-  main section #grilla2 {
+  main section .grilla2 {
     display: grid;
     grid-template-areas: "texto texto" "imagen mapa" "imagen mapa";
     grid-template-columns: 50% 50%;
@@ -512,63 +521,63 @@ main section .sticky {
     margin-left: 0;
     margin-right: 0;
   }
-  main section #grilla2 .textoMonumentos {
+  main section .grilla2 .textoDondeIr {
     grid-area: texto;
   }
-  main section #grilla2 .textoMonumentos p {
+  main section .grilla2 .textoDondeIr p {
     font-size: 17px;
   }
-  main section #grilla2 .imagenMonumentos {
+  main section .grilla2 .imagenDondeIr {
     grid-area: imagen;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  main section #grilla2 .imagenMonumentos img {
+  main section .grilla2 .imagenDondeIr img {
     margin: 10px;
     padding: 5px;
     width: 300px;
     height: 350px;
   }
-  main section #grilla2 .imagenMonumentos p {
+  main section .grilla2 .imagenDondeIr p {
     margin: 10px 15px;
     text-align: justify;
     font-size: 15px;
   }
-  main section #grilla2 .imagenMonumentos .monumentoText {
+  main section .grilla2 .imagenDondeIr .DondeIrText {
     text-align: justify;
   }
-  main section #grilla2 .mapaMonumento {
+  main section .grilla2 .mapaDondeIr {
     grid-area: mapa;
   }
-  main section #grilla3 {
+  main section .grilla3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
-  main section #grilla3 .textoMonumentos p {
+  main section .grilla3 .textoDondeIr p {
     font-size: 17px;
     margin-left: 10px;
     margin-right: 10px;
   }
-  main section #grilla3 .imagenMonumentos {
+  main section .grilla3 .imagenDondeIr {
     display: flex;
     justify-content: space-evenly;
   }
-  main section #grilla3 .imagenMonumentos img {
+  main section .grilla3 .imagenDondeIr img {
     margin: 10px 20px;
     padding: 5px;
     width: 300px;
     height: 350px;
   }
-  main section #grilla3 .imagenMonumentos p {
+  main section .grilla3 .imagenDondeIr p {
     margin: 10px 100px;
     text-align: justify;
     font-size: 15px;
   }
-  main section #grilla3 .imagenMonumentos .monumentoText {
+  main section .grilla3 .imagenDondeIr .DondeIrText {
     text-align: justify;
   }
   main section .sticky {
@@ -587,7 +596,7 @@ main section .sticky {
     text-align: start;
     margin-left: 110px;
   }
-  main section #grilla2 {
+  main section .grilla2 {
     display: grid;
     grid-template-areas: "imagen texto mapa" "imagen texto mapa" "imagen texto mapa";
     grid-template-columns: 30% 40% 30%;
@@ -595,35 +604,35 @@ main section .sticky {
     margin-left: 20px;
     margin-right: 20px;
   }
-  main section #grilla2 .textoMonumentos {
+  main section .grilla2 .textoDondeIr {
     grid-area: texto;
     display: flex;
     margin: 10px 15px;
     text-align: justify;
     font-size: 15px;
   }
-  main section #grilla2 .imagenMonumentos {
+  main section .grilla2 .imagenDondeIr {
     grid-area: imagen;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
-  main section #grilla2 .imagenMonumentos img {
+  main section .grilla2 .imagenDondeIr img {
     margin: 10px;
     padding: 5px;
     width: 300px;
     height: 350px;
   }
-  main section #grilla2 .imagenMonumentos p {
+  main section .grilla2 .imagenDondeIr p {
     margin: 5px;
     text-align: justify;
     font-size: 17px;
   }
-  main section #grilla2 .imagenMonumentos .monumentoText {
+  main section .grilla2 .imagenDondeIr .DondeIrText {
     text-align: justify;
   }
-  main section #grilla2 .mapaMonumento {
+  main section .grilla2 .mapaDondeIr {
     grid-area: mapa;
     margin: 10px 5px;
     display: flex;
@@ -631,17 +640,17 @@ main section .sticky {
     align-items: center;
     justify-content: flex-start;
   }
-  main section #grilla2 .mapaMonumento p {
+  main section .grilla2 .mapaDondeIr p {
     text-align: center;
     margin-bottom: 10px;
     font-size: 20px;
     text-decoration: underline;
   }
-  main section #grilla2 .mapaMonumento .iframe {
+  main section .grilla2 .mapaDondeIr .iframe {
     width: 400px;
     height: 350px;
   }
-  main section #grilla3 {
+  main section .grilla3 {
     display: grid;
     grid-template-areas: "texto imagen" "texto imagen" "mapa imagen";
     grid-template-columns: 60% 40%;
@@ -649,30 +658,30 @@ main section .sticky {
     margin-left: 50px;
     margin-right: 50px;
   }
-  main section #grilla3 .textoMonumentos {
+  main section .grilla3 .textoDondeIr {
     grid-area: texto;
     display: flex;
     margin: 10px 45px;
     text-align: justify;
     font-size: 15px;
   }
-  main section #grilla3 .imagenMonumentos {
+  main section .grilla3 .imagenDondeIr {
     grid-area: imagen;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  main section #grilla3 .imagenMonumentos img {
+  main section .grilla3 .imagenDondeIr img {
     margin: 10px;
     padding: 5px;
     width: 400px;
     height: 450px;
   }
-  main section #grilla3 .imagenMonumentos p {
+  main section .grilla3 .imagenDondeIr p {
     margin: 20px;
   }
-  main section #grilla3 .mapaMonumento {
+  main section .grilla3 .mapaDondeIr {
     grid-area: mapa;
     display: flex;
     flex-direction: column;
@@ -681,7 +690,7 @@ main section .sticky {
   }
 }
 /* Pagina Sobre Nosotros */
-main .contenedorSobreNosotros .textoSobreNosotros .titulo_sobre {
+main .contenedorSobreNosotros .textoSobreNosotros .tituloSobre {
   text-align: center;
   font-size: 40px;
   margin: 30px;
