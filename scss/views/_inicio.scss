@@ -122,7 +122,7 @@ main {
             .contenedorInicio2 {
                 display: grid;
                 grid-area: texto1;
-                text-align: justify;
+                align-items: justify;
 
                 .textoInicio2 {
                     display: grid;
@@ -181,19 +181,19 @@ main {
                     .imagenInicio1 {
                         border-radius: 15%;
                         @include imagen (100%, cover);
-                        width: 95%;
+                        width: 90%;
                     }
 
                     .imagenInicio2 {
                         @include grid;
                         @include imagen (100%, cover);
-                        width: 95%;
+                        width: 90%;
                     }
 
                     .imagenInicio3 {
                         @include grid;
                         @include imagen (100%, cover);
-                        width: 95%;
+                        width: 90%;
                     }
                 }
             }
@@ -207,7 +207,7 @@ main {
                 }
 
                 div {
-                    text-align: justify;
+                    align-items: justify;
                 }
             }
 
@@ -222,33 +222,21 @@ main {
                     .imagenInicio6 {
                         @include grid;
                         @include imagen (100%, cover);
-                        width: 95%;
+                        width: 90%;
                     }
 
                     .imagenInicio5 {
                         @include grid;
                         @include imagen (100%, cover);
-                        width: 95%;
+                        width: 90%;
                     }
 
                     .imagenInicio4 {
                         @include grid;
                         border-radius: 15%;
                         @include imagen (100%, cover);
-                        width: 95%;
+                        width: 90%;
                     }
-                }
-            }
-        }
-    }
-
-    footer {
-        .contenedorFooter {
-            align-items: center;
-
-            .footerRedes {
-                .iconosRedes {
-                    flex-direction: row;
                 }
             }
         }

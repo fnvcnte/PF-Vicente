@@ -11,7 +11,6 @@
             margin-bottom: 20px;
             padding: 20px;
             font-size: 30px;
-            text-align: center;
         }
     }
 
@@ -22,7 +21,7 @@
         background-size:cover;
         margin: 20px 45px;
         padding: 20px;
-        text-align: start;
+        align-items: start;
         border: 3px outset nth($color-secundario, 2);
         padding: 15px;
         margin-bottom: 50px;

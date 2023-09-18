@@ -55,3 +55,17 @@ footer {
         position: relative;
     }
 }
+
+@media (min-width: $breakpoint-desktop) {
+    footer {
+        .contenedorFooter {
+            align-items: center;
+
+            .footerRedes {
+                .iconosRedes {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}

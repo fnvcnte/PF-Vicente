@@ -28,10 +28,10 @@ header {
                 .nav-item {
                     a {
                         color: nth($color-secundario, 1) !important;
+                        padding: 5px 10px;
                     }
 
                     a:hover {
-                        background-color: $color-principal;
                         color: white !important;
                     }
 

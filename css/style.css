@@ -45,9 +45,9 @@ header .navbar .container-fluid .navbar-toggler {
 }
 header .navbar .collapse .navbar-nav .nav-item a {
   color: rgb(204, 204, 86) !important;
+  padding: 5px 10px;
 }
 header .navbar .collapse .navbar-nav .nav-item a:hover {
-  background-color: #0b0a16;
   color: white !important;
 }
 header .navbar .collapse .navbar-nav .nav-item .nav-link {
@@ -107,10 +107,18 @@ footer .contenedorFooter .footerRedes .iconosRedes img {
     position: relative;
   }
 }
+@media (min-width: 1024px) {
+  footer .contenedorFooter {
+    align-items: center;
+  }
+  footer .contenedorFooter .footerRedes .iconosRedes {
+    flex-direction: row;
+  }
+}
 /* Pagina Inicio */
 main .tituloQuienes {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   margin: 30px;
 }
 main h2 {
@@ -183,7 +191,7 @@ main #grilla .contenedorInicio3 div .imagenInicio4 {
   main #grilla .contenedorInicio2 {
     display: grid;
     grid-area: texto1;
-    text-align: justify;
+    align-items: justify;
   }
   main #grilla .contenedorInicio2 .textoInicio2 {
     display: grid;
@@ -232,21 +240,21 @@ main #grilla .contenedorInicio3 div .imagenInicio4 {
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
-    width: 95%;
+    width: 90%;
   }
   main #grilla .contenedorInicio1 div .imagenInicio2 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
-    width: 95%;
+    width: 90%;
   }
   main #grilla .contenedorInicio1 div .imagenInicio3 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
-    width: 95%;
+    width: 90%;
   }
   main #grilla .contenedorInicio2 {
     display: grid;
@@ -256,7 +264,7 @@ main #grilla .contenedorInicio3 div .imagenInicio4 {
     display: grid;
   }
   main #grilla .contenedorInicio2 div {
-    text-align: justify;
+    align-items: justify;
   }
   main #grilla .contenedorInicio3 {
     display: grid;
@@ -274,14 +282,14 @@ main #grilla .contenedorInicio3 div .imagenInicio4 {
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
-    width: 95%;
+    width: 90%;
   }
   main #grilla .contenedorInicio3 div .imagenInicio5 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
-    width: 95%;
+    width: 90%;
   }
   main #grilla .contenedorInicio3 div .imagenInicio4 {
     display: grid;
@@ -289,13 +297,7 @@ main #grilla .contenedorInicio3 div .imagenInicio4 {
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
-    width: 95%;
-  }
-  footer .contenedorFooter {
-    align-items: center;
-  }
-  footer .contenedorFooter .footerRedes .iconosRedes {
-    flex-direction: row;
+    width: 90%;
   }
 }
 /* Pagina Portafolio */
@@ -305,7 +307,7 @@ main {
 }
 main #tituloPortafolio {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   margin: 30px;
 }
 main .portafolio {
@@ -380,7 +382,7 @@ main #carouselExample img {
 /* Pagina Donde Ir */
 main section #tituloDonde {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   margin: 30px;
 }
 main div .menuDondeIr {
@@ -396,7 +398,7 @@ main div .menuDondeIr li a {
   display: inline-block;
   margin-right: 0px;
   border: 1px solid #0b0a16;
-  padding: 4px 10px;
+  padding: 5px 8px;
   color: #0b0a16;
   transition: all 0.5s;
 }
@@ -412,7 +414,7 @@ main section h2 {
   margin-top: 75px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  margin: 50px 30%;
+  margin: 50px 20%;
   padding: 10px;
 }
 main section h3 {
@@ -512,6 +514,9 @@ main section .sticky {
 @media (min-width: 768px) {
   main div .menuDondeIr li {
     margin-left: 15px;
+  }
+  main section h2 {
+    margin: 50px 30%;
   }
   main section .grilla2 {
     display: grid;
@@ -692,7 +697,7 @@ main section .sticky {
 /* Pagina Sobre Nosotros */
 main .contenedorSobreNosotros .textoSobreNosotros .tituloSobre {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   margin: 30px;
 }
 main .contenedorSobreNosotros .textoSobreNosotros p {
@@ -787,7 +792,6 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
   margin-bottom: 20px;
   padding: 20px;
   font-size: 30px;
-  text-align: center;
 }
 .mainContacto form {
   position: relative;
@@ -796,7 +800,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
   background-size: cover;
   margin: 20px 45px;
   padding: 20px;
-  text-align: start;
+  align-items: start;
   border: 3px outset rgb(207, 207, 207);
   padding: 15px;
   margin-bottom: 50px;
@@ -836,7 +840,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
   }
   .mainContacto section .tituloContacto {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     margin: 30px;
   }
   .mainContacto form {
@@ -852,7 +856,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
 @media (min-width: 1024px) {
   .mainContacto section .tituloContacto {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     margin: 30px;
   }
   .mainContacto form {
