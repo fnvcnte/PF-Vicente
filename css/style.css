@@ -37,8 +37,7 @@ header .navbar {
 }
 header .navbar .container-fluid img {
   width: 150px;
-  margin-right: 50px;
-  margin-bottom: 10px;
+  margin-right: 5px;
 }
 header .navbar .container-fluid .navbar-toggler {
   background-color: rgb(207, 207, 207) !important;
