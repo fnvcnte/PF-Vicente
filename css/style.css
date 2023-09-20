@@ -391,6 +391,7 @@ main div .menuDondeIr {
   margin: 0px;
   padding: 0px;
   color: #0b0a16;
+  font-size: 8px;
 }
 main div .menuDondeIr li a {
   text-decoration: none;
@@ -513,6 +514,7 @@ main section .sticky {
 @media (min-width: 768px) {
   main div .menuDondeIr li {
     margin-left: 15px;
+    font-size: 10px;
   }
   main section h2 {
     margin: 50px 30%;
@@ -592,6 +594,7 @@ main section .sticky {
 @media (min-width: 1024px) {
   main div .menuDondeIr li {
     margin-left: 15px;
+    font-size: 10px;
   }
   main section h2 {
     margin-top: 50px;
@@ -661,6 +664,7 @@ main section .sticky {
     grid-template-rows: auto auto;
     margin-left: 50px;
     margin-right: 50px;
+    align-items: start;
   }
   main section .grilla3 .textoDondeIr {
     grid-area: texto;
@@ -689,8 +693,6 @@ main section .sticky {
     grid-area: mapa;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
   }
 }
 /* Pagina Sobre Nosotros */
@@ -709,8 +711,8 @@ main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros {
   justify-content: center;
 }
 main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes {
-  width: 110px;
-  height: 112px;
+  width: 100px;
+  height: 105px;
   margin-top: 3px;
   margin-right: 10px;
   transition: all 0.5s;
@@ -719,7 +721,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes:h
   opacity: 0.5;
 }
 main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes2 {
-  width: 100px;
+  width: 90px;
   height: auto;
   margin: 10px;
   transition: all 0.5s;
@@ -728,7 +730,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes2:
   opacity: 0.5;
 }
 main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes3 {
-  width: 100px;
+  width: 90px;
   height: auto;
   margin: 10px;
   transition: all 0.5s;
@@ -764,6 +766,20 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
     align-items: center;
     justify-content: center;
     width: 50%;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros {
+    display: flex;
+    justify-content: center;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes {
+    width: 110px;
+    height: 112px;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes2 {
+    width: 100px;
+  }
+  main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes3 {
+    width: 100px;
   }
   main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
     padding: 15px;
