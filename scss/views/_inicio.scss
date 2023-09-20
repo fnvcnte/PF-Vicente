@@ -11,12 +11,11 @@ main {
         margin: 30px;
     }
 
-    #grilla {
+    .grilla {
         .contenedorInicio1 {
             div {
                 .imagenInicio1 {
-                    width: 100%;
-                    height: 100%;
+                    @include parametroImagen (100%, 100%);
                     object-fit: cover;
                 }
 
@@ -71,8 +70,7 @@ main {
                 }
 
                 .imagenInicio4 {
-                    width: 100%;
-                    height: 100%;
+                    @include parametroImagen (100%, 100%);
                     object-fit: cover;
                 }
             }
@@ -84,7 +82,7 @@ main {
 /* Pagina Inicio */
 @media (min-width: $breakpoint-tablet) {
     main {
-        #grilla {
+        .grilla {
             display: grid;
             grid-template-areas:
                 "imagen1 imagen1"
@@ -161,7 +159,7 @@ main {
 /* Pagina Inicio */
 @media (min-width: $breakpoint-desktop) {
     main {
-        #grilla {
+        .grilla {
             display: grid;
             grid-template-areas:
                 "imagen1 texto1 imagen2"

@@ -41,8 +41,7 @@ footer {
                 }
 
                 img {
-                    width: 40px;
-                    height: 40px;
+                    @include parametroImagen (40px, 40px);
                     padding: 4px;
                 }
             }

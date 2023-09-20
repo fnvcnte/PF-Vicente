@@ -28,3 +28,15 @@
     font-size: 35px;
     margin: 30px;
 }
+
+@mixin parametroImagen ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin parametroGeneral ($display, $flex-direction, $align-items, $justify-content) {
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

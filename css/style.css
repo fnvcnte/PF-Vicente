@@ -1,9 +1,9 @@
-main #grilla .contenedorInicio2 .textoInicio3, main #grilla .contenedorInicio2 .textoInicio2, main #grilla .contenedorInicio2 .textoInicio1 {
+main .grilla .contenedorInicio2 .textoInicio3, main .grilla .contenedorInicio2 .textoInicio2, main .grilla .contenedorInicio2 .textoInicio1 {
   margin-left: 15px;
   margin-right: 15px;
 }
 
-main #grilla .contenedorInicio2 .textoInicio3 p, main #grilla .contenedorInicio2 .textoInicio2 p, main #grilla .contenedorInicio2 .textoInicio1 p {
+main .grilla .contenedorInicio2 .textoInicio3 p, main .grilla .contenedorInicio2 .textoInicio2 p, main .grilla .contenedorInicio2 .textoInicio1 p {
   padding: 7px;
   font-size: 17px;
 }
@@ -36,8 +36,9 @@ header .navbar {
   font-size: 13px;
 }
 header .navbar .container-fluid img {
-  width: 150px;
+  width: 300px;
   margin-right: 5px;
+  margin-bottom: 20px;
 }
 header .navbar .container-fluid .navbar-toggler {
   background-color: rgb(207, 207, 207) !important;
@@ -55,7 +56,7 @@ header .navbar .collapse .navbar-nav .nav-item .nav-link {
 
 @media (min-width: 768px) {
   header .navbar .container-fluid img {
-    width: 270px;
+    width: 350px;
   }
 }
 footer {
@@ -125,33 +126,33 @@ main h2 {
   font-size: 30px;
   margin: 30px;
 }
-main #grilla .contenedorInicio1 div .imagenInicio1 {
+main .grilla .contenedorInicio1 div .imagenInicio1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-main #grilla .contenedorInicio1 div .imagenInicio2 {
+main .grilla .contenedorInicio1 div .imagenInicio2 {
   display: none;
 }
-main #grilla .contenedorInicio1 div .imagenInicio3 {
+main .grilla .contenedorInicio1 div .imagenInicio3 {
   display: none;
 }
-main #grilla .contenedorInicio2 {
+main .grilla .contenedorInicio2 {
   padding: 5px;
 }
-main #grilla .contenedorInicio2 .textoInicio2 {
+main .grilla .contenedorInicio2 .textoInicio2 {
   display: none;
 }
-main #grilla .contenedorInicio2 .textoInicio3 {
+main .grilla .contenedorInicio2 .textoInicio3 {
   display: none;
 }
-main #grilla .contenedorInicio3 div .imagenInicio6 {
+main .grilla .contenedorInicio3 div .imagenInicio6 {
   display: none;
 }
-main #grilla .contenedorInicio3 div .imagenInicio5 {
+main .grilla .contenedorInicio3 div .imagenInicio5 {
   display: none;
 }
-main #grilla .contenedorInicio3 div .imagenInicio4 {
+main .grilla .contenedorInicio3 div .imagenInicio4 {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -159,75 +160,75 @@ main #grilla .contenedorInicio3 div .imagenInicio4 {
 
 /* Pagina Inicio */
 @media (min-width: 768px) {
-  main #grilla {
+  main .grilla {
     display: grid;
     grid-template-areas: "imagen1 imagen1" "texto1 texto1" "imagen2 imagen2" "footer footer";
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto;
     gap: 10px;
   }
-  main #grilla .contenedorInicio1 {
+  main .grilla .contenedorInicio1 {
     grid-area: imagen1;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  main #grilla .contenedorInicio1 div {
+  main .grilla .contenedorInicio1 div {
     margin-top: 50px;
   }
-  main #grilla .contenedorInicio1 div .imagenInicio1 {
+  main .grilla .contenedorInicio1 div .imagenInicio1 {
     height: 500px;
     border-radius: 10px;
   }
-  main #grilla .contenedorInicio1 div .imagenInicio2 {
+  main .grilla .contenedorInicio1 div .imagenInicio2 {
     display: none;
   }
-  main #grilla .contenedorInicio1 div .imagenInicio3 {
+  main .grilla .contenedorInicio1 div .imagenInicio3 {
     display: grid;
     height: 500px;
     border-radius: 10px;
   }
-  main #grilla .contenedorInicio2 {
+  main .grilla .contenedorInicio2 {
     display: grid;
     grid-area: texto1;
     align-items: justify;
   }
-  main #grilla .contenedorInicio2 .textoInicio2 {
+  main .grilla .contenedorInicio2 .textoInicio2 {
     display: grid;
   }
-  main #grilla .contenedorInicio3 {
+  main .grilla .contenedorInicio3 {
     grid-area: imagen2;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  main #grilla .contenedorInicio3 div {
+  main .grilla .contenedorInicio3 div {
     margin-bottom: 50px;
   }
-  main #grilla .contenedorInicio3 div .imagenInicio6 {
+  main .grilla .contenedorInicio3 div .imagenInicio6 {
     display: grid;
     height: 500px;
     border-radius: 10px;
   }
-  main #grilla .contenedorInicio3 div .imagenInicio5 {
+  main .grilla .contenedorInicio3 div .imagenInicio5 {
     display: grid;
     height: 500px;
     border-radius: 10px;
   }
-  main #grilla .contenedorInicio3 div .imagenInicio4 {
+  main .grilla .contenedorInicio3 div .imagenInicio4 {
     display: none;
   }
 }
 /* Pagina Inicio */
 @media (min-width: 1024px) {
-  main #grilla {
+  main .grilla {
     display: grid;
     grid-template-areas: "imagen1 texto1 imagen2" "imagen1 texto1 imagen2" "imagen1 texto1 imagen2" "footer footer footer";
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 1fr;
     padding-bottom: 20px;
   }
-  main #grilla .contenedorInicio1 {
+  main .grilla .contenedorInicio1 {
     display: grid;
     grid-area: imagen1;
     display: flex;
@@ -235,37 +236,37 @@ main #grilla .contenedorInicio3 div .imagenInicio4 {
     align-items: center;
     justify-content: space-around;
   }
-  main #grilla .contenedorInicio1 div .imagenInicio1 {
+  main .grilla .contenedorInicio1 div .imagenInicio1 {
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
     width: 90%;
   }
-  main #grilla .contenedorInicio1 div .imagenInicio2 {
+  main .grilla .contenedorInicio1 div .imagenInicio2 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
     width: 90%;
   }
-  main #grilla .contenedorInicio1 div .imagenInicio3 {
+  main .grilla .contenedorInicio1 div .imagenInicio3 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
     width: 90%;
   }
-  main #grilla .contenedorInicio2 {
+  main .grilla .contenedorInicio2 {
     display: grid;
     grid-area: texto1;
   }
-  main #grilla .contenedorInicio2 .textoInicio3 {
+  main .grilla .contenedorInicio2 .textoInicio3 {
     display: grid;
   }
-  main #grilla .contenedorInicio2 div {
+  main .grilla .contenedorInicio2 div {
     align-items: justify;
   }
-  main #grilla .contenedorInicio3 {
+  main .grilla .contenedorInicio3 {
     display: grid;
     grid-area: imagen2;
     display: flex;
@@ -273,24 +274,24 @@ main #grilla .contenedorInicio3 div .imagenInicio4 {
     align-items: center;
     justify-content: space-around;
   }
-  main #grilla .contenedorInicio3 div {
+  main .grilla .contenedorInicio3 div {
     margin-top: 90px;
   }
-  main #grilla .contenedorInicio3 div .imagenInicio6 {
+  main .grilla .contenedorInicio3 div .imagenInicio6 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
     width: 90%;
   }
-  main #grilla .contenedorInicio3 div .imagenInicio5 {
+  main .grilla .contenedorInicio3 div .imagenInicio5 {
     display: grid;
     border-radius: 15%;
     width: 100%;
     object-fit: object-fit;
     width: 90%;
   }
-  main #grilla .contenedorInicio3 div .imagenInicio4 {
+  main .grilla .contenedorInicio3 div .imagenInicio4 {
     display: grid;
     border-radius: 15%;
     border-radius: 15%;
@@ -318,7 +319,8 @@ main #carouselExample {
 }
 main #carouselExample img {
   border-radius: 5%;
-  height: 60vh;
+  height: 55vh;
+  width: auto;
 }
 
 /* Pagina Portafolio */
@@ -327,12 +329,13 @@ main #carouselExample img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: none;
     margin: 20px;
     padding: 30px;
   }
   main .portafolio .imagenPortafolio {
-    height: 400px;
     width: 400px;
+    height: 400px;
     margin-top: 20px;
   }
   main .portafolio .imagenPortafolio img {
@@ -367,10 +370,10 @@ main #carouselExample img {
   }
   main .portafolio {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 20px;
     padding: 30px;
   }
@@ -411,7 +414,6 @@ main div .menuDondeIr li a:active {
   font-size: 10px;
 }
 main section h2 {
-  margin-top: 75px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   margin: 50px 20%;
@@ -432,18 +434,18 @@ main section .grilla2 .textoDondeIr p {
   font-size: 15px;
 }
 main section .grilla2 .imagenDondeIr {
-  grid-area: imagen;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  grid-area: imagen;
   margin: 10px 20px;
 }
 main section .grilla2 .imagenDondeIr img {
-  margin: 10px;
-  padding: 5px;
   width: 300px;
   height: 340px;
+  margin: 10px;
+  padding: 5px;
 }
 main section .grilla2 .imagenDondeIr p {
   margin: 5px;
@@ -452,10 +454,11 @@ main section .grilla2 .imagenDondeIr p {
 }
 main section .grilla2 .mapaDondeIr {
   grid-area: mapa;
-  align-items: center;
-  margin: 10px 5px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: none;
+  margin: 10px 5px;
 }
 main section .grilla2 .mapaDondeIr p {
   text-align: center;
@@ -477,16 +480,17 @@ main section .grilla3 .textoDondeIr p {
 main section .grilla3 .imagenDondeIr {
   grid-area: imagen;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: none;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 10px 20px;
 }
 main section .grilla3 .imagenDondeIr img {
-  margin: 6px;
-  padding: 3px;
   width: 200px;
   height: 250px;
+  margin: 6px;
+  padding: 3px;
 }
 main section .grilla3 .imagenDondeIr p {
   margin: 5px;
@@ -495,10 +499,11 @@ main section .grilla3 .imagenDondeIr p {
 }
 main section .grilla3 .mapaDondeIr {
   grid-area: mapa;
-  align-items: center;
-  margin: 10px 5px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: none;
+  margin: 10px 5px;
 }
 main section .grilla3 .mapaDondeIr p {
   text-align: center;
@@ -541,14 +546,11 @@ main section .sticky {
     justify-content: space-around;
   }
   main section .grilla2 .imagenDondeIr img {
-    margin: 10px;
-    padding: 5px;
     width: 300px;
     height: 350px;
   }
   main section .grilla2 .imagenDondeIr p {
     margin: 10px 15px;
-    text-align: justify;
     font-size: 15px;
   }
   main section .grilla2 .imagenDondeIr .DondeIrText {
@@ -559,9 +561,10 @@ main section .sticky {
   }
   main section .grilla3 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: none;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   main section .grilla3 .textoDondeIr p {
     font-size: 17px;
@@ -583,19 +586,12 @@ main section .sticky {
     text-align: justify;
     font-size: 15px;
   }
-  main section .grilla3 .imagenDondeIr .DondeIrText {
-    text-align: justify;
-  }
   main section .sticky {
     display: grid;
   }
 }
 /* Pagina Donde Ir */
 @media (min-width: 1024px) {
-  main div .menuDondeIr li {
-    margin-left: 15px;
-    font-size: 10px;
-  }
   main section h2 {
     margin-top: 50px;
   }
@@ -620,24 +616,14 @@ main section .sticky {
   }
   main section .grilla2 .imagenDondeIr {
     grid-area: imagen;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
   }
   main section .grilla2 .imagenDondeIr img {
     margin: 10px;
-    padding: 5px;
-    width: 300px;
-    height: 350px;
   }
   main section .grilla2 .imagenDondeIr p {
     margin: 5px;
     text-align: justify;
     font-size: 17px;
-  }
-  main section .grilla2 .imagenDondeIr .DondeIrText {
-    text-align: justify;
   }
   main section .grilla2 .mapaDondeIr {
     grid-area: mapa;
@@ -751,14 +737,12 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
 @media (min-width: 1024px) {
   main .contenedorSobreNosotros {
     display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin: 50px 20px 100px 20;
   }
   main .contenedorSobreNosotros .textoSobreNosotros {
     width: 50%;
     margin-left: 60px;
+    margin-bottom: 50px;
   }
   main .contenedorSobreNosotros .textoSobreNosotros2 {
     display: flex;
@@ -766,10 +750,6 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
     align-items: center;
     justify-content: center;
     width: 50%;
-  }
-  main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros {
-    display: flex;
-    justify-content: center;
   }
   main .contenedorSobreNosotros .textoSobreNosotros2 .imagenSobreNosotros .redes {
     width: 110px;
@@ -800,6 +780,7 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: none;
 }
 .mainContacto section .tituloContacto {
   text-align: center;
@@ -850,8 +831,8 @@ main .contenedorSobreNosotros .textoSobreNosotros2 div .enlaceContacto {
   .mainContacto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   .mainContacto section .tituloContacto {
     text-align: center;

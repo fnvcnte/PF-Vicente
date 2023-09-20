@@ -1,9 +1,8 @@
 // Vista Mobile
 /* Pagina Contacto */
 .mainContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include parametroGeneral (flex, column, center, none);
+
     section {
         .tituloContacto {
             text-align: center;
@@ -18,7 +17,7 @@
         position: relative;
         width: 75%;
         background-image: url("../multimedia/imagenForm.png");
-        background-size:cover;
+        background-size: cover;
         margin: 20px 45px;
         padding: 20px;
         align-items: start;
@@ -26,28 +25,33 @@
         padding: 15px;
         margin-bottom: 50px;
         filter: grayscale(80%);
+
         .titulo_form {
             text-align: center;
             text-decoration: none;
             font-size: 25px;
             color: white;
         }
+
         .mb-3 {
-            background: rgba(255, 255, 255, 0.7);
+            background: $nubladoDos;
             padding: 20px;
             border-radius: 10px;
         }
-        h3{
+
+        h3 {
             color: white;
             display: inline;
-            background: rgba(100, 100, 100, 0.616);
+            background: $nublado;
             border-radius: 5px;
         }
+
         div {
             padding-bottom: 5px;
+
             #text {
                 width: 100%;
-              }
+            }
         }
     }
 }
@@ -56,10 +60,7 @@
 /* Pagina Contacto */
 @media (min-width: $breakpoint-tablet) {
     .mainContacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include parametroGeneral (flex, column, center, center);
 
         section {
             .tituloContacto {
@@ -91,8 +92,7 @@
         }
 
         form {
-            width: 35%;
-            height: 600px;
+            @include parametroImagen (35%, 600px);
 
             .titulo_form {
                 text-align: center;
@@ -100,7 +100,7 @@
                 font-size: 25px;
             }
 
-            div{
+            div {
                 margin-top: 10px;
             }
         }
